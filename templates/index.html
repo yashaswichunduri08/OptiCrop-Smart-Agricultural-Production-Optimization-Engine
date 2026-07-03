@@ -1,38 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>OptiCrop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OptiCrop</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
+
+<div class="overlay">
+
+<div class="card">
 
 <h1>🌱 OptiCrop</h1>
 
+<p class="subtitle">
+Smart Agricultural Production Optimization Engine
+</p>
+
 <form action="/predict" method="POST">
 
-<label>Nitrogen</label><br>
-<input type="number" name="N" required><br><br>
+<div class="input-group">
+<label>Nitrogen (N)</label>
+<input type="number" name="N" required>
+</div>
 
-<label>Phosphorous</label><br>
-<input type="number" name="P" required><br><br>
+<div class="input-group">
+<label>Phosphorus (P)</label>
+<input type="number" name="P" required>
+</div>
 
-<label>Potassium</label><br>
-<input type="number" name="K" required><br><br>
+<div class="input-group">
+<label>Potassium (K)</label>
+<input type="number" name="K" required>
+</div>
 
-<label>Temperature</label><br>
-<input type="number" step="any" name="temperature" required><br><br>
+<div class="input-group">
+<label>Temperature (°C)</label>
+<input type="number" step="any" name="temperature" required>
+</div>
 
-<label>Humidity</label><br>
-<input type="number" step="any" name="humidity" required><br><br>
+<div class="input-group">
+<label>Humidity (%)</label>
+<input type="number" step="any" name="humidity" required>
+</div>
 
-<label>pH</label><br>
-<input type="number" step="any" name="ph" required><br><br>
+<div class="input-group">
+<label>Soil pH</label>
+<input type="number" step="any" name="ph" required>
+</div>
 
-<label>Rainfall</label><br>
-<input type="number" step="any" name="rainfall" required><br><br>
+<div class="input-group">
+<label>Rainfall (mm)</label>
+<input type="number" step="any" name="rainfall" required>
+</div>
 
-<button type="submit">Predict Crop</button>
+<button type="submit">
+Predict Best Crop
+</button>
 
 </form>
+
+</div>
+
+</div>
 
 </body>
 </html>

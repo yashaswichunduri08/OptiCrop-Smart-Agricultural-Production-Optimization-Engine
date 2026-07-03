@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Prediction</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<h1>🌾 Recommended Crop</h1>
+<div class="overlay">
+
+<div class="card">
+
+<h1>🌾 Recommendation Result</h1>
+
+<div class="result">
 
 <h2>{{ prediction }}</h2>
 
-<a href="/">Predict Again</a>
+</div>
+
+<a href="/">
+<button>
+Predict Again
+</button>
+</a>
+
+</div>
+
+</div>
 
 </body>
 </html>
