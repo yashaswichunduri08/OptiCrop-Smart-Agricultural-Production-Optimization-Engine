@@ -69,7 +69,7 @@ The trained Machine Learning model processes these inputs and recommends the mos
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 **OptiCrop** demonstrates how Artificial Intelligence and Machine Learning can support smart agriculture by providing accurate crop recommendations based on soil nutrients and environmental factors. The system simplifies crop selection, helping farmers make informed decisions that can improve productivity, optimize resource utilization, and reduce agricultural risks.
 
